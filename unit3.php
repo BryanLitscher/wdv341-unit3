@@ -27,7 +27,7 @@ function textDisplay($string){
 	echo "<p>Length of \"" . $string . "\" is " . strlen($string) . "</p>\n";
 	$newString = trim($string);
 	$newString = strtolower($newString);
-	echo "<p>\"" . $string . "\" trimmed and converted to lower case: \"" .$newString. "</p>\n";
+	echo "<p>\"" . str_replace(" " , "&nbsp", $string) . "\" trimmed and converted to lower case: \"" .$newString. "\"</p>\n";
 	echo  "<p>\"" . $newString . "\" " . ((stripos($newString, "DMACC")=== FALSE)?"does not contain": "contains") . " DMACC</p>\n";
 }
 

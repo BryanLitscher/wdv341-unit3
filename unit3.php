@@ -83,8 +83,8 @@ function formatNumber( $n, $formatType ){
 	echo "<p>$date_string to mm/dd/yyyy format:" . convertDate(1, $date_string) . "</p>\n";
 	echo "<p>$date_string to dd/mm/yyyy format:"  . convertDate(2, $date_string) . "</p>\n";
 	textDisplay($test_string);
-	echo "<p>$test_number to Formatted Number: " . formatNumber($test_number, "formatted_number") . "</p>\n";
-	echo "<p>$test_number to US Currency: " . formatNumber($test_number, "us_currency") . "</p>\n";
+	echo "<p>1234567890  to Formatted Number: " . formatNumber(1234567890 , "formatted_number") . "</p>\n";
+	echo "<p>123456 to US Currency: " . formatNumber(123456 , "us_currency") . "</p>\n";
 	?>
 
 	</body>
